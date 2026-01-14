@@ -81,7 +81,7 @@ def search_prompt():
             use_jsonb=True,
         )
         
-        # Configure retriever with k=10 as per Agents.md
+        # Configure retriever with k=10 
         retriever = vector_store.as_retriever(search_kwargs={"k": 10})
         
         # Define prompt
